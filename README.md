@@ -9,5 +9,5 @@ Mechanisms logging at levels info, warn and error with a timestamp
 To utilise this library add this to your sbt build file
 
 ```
-"com.cjww-dev.libs" % "http-verbs_2.11" % "<SEE_VERSION_ABOVE>" 
+"com.cjww-dev.libs" % "logging_2.11" % "<SEE_VERSION_ABOVE>" 
 ```
