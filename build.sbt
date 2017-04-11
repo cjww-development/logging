@@ -10,11 +10,11 @@ val btVersion: String = {
 
 name := "logging"
 version := btVersion
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.10"
 organization := "com.cjww-dev.libs"
 
-val codeDep: Seq[ModuleID] = Seq("com.typesafe.play" % "play_2.11" % "2.5.12")
-val testDep: Seq[ModuleID] = Seq("org.scalatestplus.play" % "scalatestplus-play_2.11" % "1.5.1")
+val codeDep: Seq[ModuleID] = Seq("com.typesafe.play" % "play_2.11" % "2.5.14")
+val testDep: Seq[ModuleID] = Seq("org.scalatestplus.play" % "scalatestplus-play_2.11" % "2.0.0")
 
 libraryDependencies ++= codeDep
 libraryDependencies ++= testDep
