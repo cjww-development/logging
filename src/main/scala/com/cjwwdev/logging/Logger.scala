@@ -23,7 +23,7 @@ object Logger extends Logger
 
 trait Logger {
   private def getNow: String = {
-    DateTime.now.toString("dd/MM/YYYY HH:MM:SS")
+    DateTime.now.toString("dd/MM/yyyy HH:mm:ss")
   }
 
   def info(message: String): Unit = {
