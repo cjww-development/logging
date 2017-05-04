@@ -10,7 +10,7 @@ val btVersion: String = {
 
 name := "logging"
 version := btVersion
-scalaVersion := "2.11.10"
+scalaVersion := "2.11.11"
 organization := "com.cjww-dev.libs"
 
 val codeDep: Seq[ModuleID] = Seq("com.typesafe.play" % "play_2.11" % "2.5.14")
