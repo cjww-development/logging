@@ -64,4 +64,17 @@ trait Logger {
       error.printStackTrace()
     }
   }
+
+  def debug(message: String): Unit = {
+    if(PlayLogger.isDebugEnabled) {
+      PlayLogger.debug(s"[$getNow] - $message")
+    }
+  }
+
+  def debug(message: String, error: Throwable): Unit = {
+    if(PlayLogger.isDebugEnabled) {
+      PlayLogger.debug(s"[$getNow] - $message")
+      error.printStackTrace()
+    }
+  }
 }
