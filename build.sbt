@@ -1,11 +1,9 @@
 import com.typesafe.config.ConfigFactory
 import scala.util.{Try, Success, Failure}
 
-val btVersion: String = {
-  Try(ConfigFactory.load.getString("version")) match {
-    case Success(ver) => ver
-    case Failure(e) => "0.1.0"
-  }
+val btVersion: String = Try(ConfigFactory.load.getString("version")) match {
+  case Success(ver) => ver
+  case Failure(_) => "0.1.0"
 }
 
 name := "logging"
