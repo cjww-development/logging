@@ -11,7 +11,7 @@ version := btVersion
 scalaVersion := "2.11.11"
 organization := "com.cjww-dev.libs"
 
-val codeDep: Seq[ModuleID] = Seq("com.typesafe.play" % "play_2.11" % "2.5.15")
+val codeDep: Seq[ModuleID] = Seq("com.typesafe.play" % "play_2.11" % "2.6.1")
 
 libraryDependencies ++= codeDep
 
