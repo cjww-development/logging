@@ -11,7 +11,7 @@ version := btVersion
 scalaVersion := "2.11.11"
 organization := "com.cjww-dev.libs"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+libraryDependencies += "com.typesafe.play" % "play-logback_2.11" % "2.5.15"
 
 bintrayOrganization := Some("cjww-development")
 bintrayReleaseOnPublish in ThisBuild := true
